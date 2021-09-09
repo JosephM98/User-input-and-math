@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Aug 27 10:52:59 2021
+
+@author: joseph
+"""
+
+day = "Thursday"
+print(type(day))
+day = 32.5
+print(type(day))
+day = 19
+print(type(day))
+day = 3j
+print(type(day))
+
+expenses1 = input("How much did you spend on Sunday?")
+expenses2 = input("How much did you spend on Monday?")
+#Total$ is a bad variable name because of the dollar sign
+#2Total us a bad variable because it doesnt begin with a letter
+#Total spent is a bad variable because of space
+total = float(expenses1) + float(expenses2)
+total_rounded = round(total,2)
+
+print("You spent: $" + "{:.2f}".format(total))
+print("You spent: $" + str(total_rounded))
+
+#Casting 
+x = int(1)
+y = int(2.8)
+z = int("3")
+print(x, end =" ")
+print(y, end = " ")
+print(z, end = " ")
+
+x = float(1)
+y = float(2.8)
+z = float("3")
+w = float("4.2")
+print(x, end = " ")
+print(y, end = " ")
+print(z, end = " ")
+print(w, end = " ")
+
+x = str("s1")
+y = str(2)
+z = str(3.0)
+print(x)
+print(y)
+print(z)
+
+x = complex(5)
+print(x)
+
+from math import pi
+r = float(input("The radius of the circle:"))
+print("The area of the circle with radius " + str(r) + " is: " + str(pi*r**2))
+
+pi = 3.1415926535897931
+r= 6.0
+V= 4.0/3.0*pi* r**3
+print('The volume of the sphere is: ' ,V)
+
+
+#Print out a radius as an input. Print out the area of that circle.
+#Take a radius as an input. Print out the volume of sphere.
+#Both answers should be to 4 decimal places printed
